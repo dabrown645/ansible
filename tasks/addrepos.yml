@@ -1,4 +1,4 @@
 - name: Install enpass
-  add_repository:
+  apt_repository:
     repo: deb https://apt.enpass.io/ stable main
     state: present
