@@ -2,4 +2,4 @@
   apt: name={{item}}
   with_items:
     - formiko 
-    - firacode
+    - fonts-firacode
