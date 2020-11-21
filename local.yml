@@ -1,5 +1,4 @@
-- hosts: local
-  connection: local
+- hosts: localhost
   become: true
   tasks:
   - name: Install formiko
