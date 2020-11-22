@@ -6,5 +6,5 @@
       changed_when: False
 
   tasks:
-    - import: tasks/addrepos
-    - import: tasks/packages
+    - include: tasks/addrepos
+    - include: tasks/packages
