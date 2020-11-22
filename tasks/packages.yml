@@ -1,7 +1,9 @@
 - name: Install basic packages
-  action: >
-    {{ ansible_pkg_mgr }} name={{ item }} state=present update_cache=yes
-  with_items:
+  become: true
+  become_usr: root
+  apt:
+    state: present
+    name:
     - formiko 
     - fonts-firacode
     - tmux
