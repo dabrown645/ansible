@@ -6,8 +6,6 @@
       changed_when: False
 
   tasks:
-#    - include: tasks/addrepos.yml
-#    - include: tasks/packages.yml
     - name: Install basic packages
       become: true
       become_usr: root
