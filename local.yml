@@ -8,12 +8,3 @@
   tasks:
     - import: tasks/addrepos
     - import: tasks/packages
-    - name: Install basic packages
-      become: true
-      apt:
-        name: tmux
-	- formiko
-	- fonts-firacode
-	- tmux
-        state: present
-        update_cache: true
