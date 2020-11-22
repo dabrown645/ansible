@@ -6,5 +6,5 @@
       changed_when: False
 
   tasks:
-    - include: tasks/addrepos static=yes
-    - include: tasks/packages static=yes
+    - include: tasks/addrepos static=no
+    - include: tasks/packages static=no
