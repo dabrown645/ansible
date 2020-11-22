@@ -2,8 +2,9 @@
   become: true
   become_usr: root
   apt:
-    state: present
     name:
     - formiko 
     - fonts-firacode
     - tmux
+    state: present
+    update_cache: true
