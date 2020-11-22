@@ -1,6 +1,5 @@
   - name: Install basic packages
     become: true
-    become_usr: root
     apt:
       name:
       - formiko 
