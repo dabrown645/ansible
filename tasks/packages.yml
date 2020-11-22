@@ -5,5 +5,11 @@
       - formiko 
       - fonts-firacode
       - tmux
+      - vim
+      - neovim
+      - bat
+      - openssh
+      - thunderbird
+      - enpass
       state: present
       update_cache: true
