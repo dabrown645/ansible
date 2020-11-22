@@ -6,4 +6,5 @@
       changed_when: False
 
   tasks:
-    - include: tasks/packages static=no
+    - include: tasks/addrepos.yml
+    - include: tasks/packages.yml
