@@ -9,10 +9,11 @@
         #- vim
         #- neovim
         #- bat
-      - openssh-client
-      - openssh-server
-      - openssh-sftp-server
+        #- openssh-client
+        #- openssh-server
+        #- openssh-sftp-server
         #- thunderbird
         #- kitty
+        - enapss
       state: present
       update_cache: true
