@@ -9,4 +9,4 @@
     repo: deb https://apt.enpass.io/ stable main
     state: present
     filename: enpass.list
-    update_cache: yes
+    update_cache: no
