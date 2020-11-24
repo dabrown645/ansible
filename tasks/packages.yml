@@ -9,7 +9,7 @@
       - vim
       - neovim
       - bat
-      - openssh
+      #- openssh
       - thunderbird
       - kitty
       state: present
