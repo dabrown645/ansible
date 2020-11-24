@@ -11,7 +11,7 @@
         #- bat
       - openssh-client
       - openssh-server
-      - openssh-sftp
+      - openssh-sftp-server
         #- thunderbird
         #- kitty
       state: present
