@@ -4,7 +4,7 @@
     state: present
   become: yes
 
--name: Install enpass repo
+- name: Install enpass repo
   apt_repository:
     repo: deb https://apt.enpass.io/ stable main
     state: present
