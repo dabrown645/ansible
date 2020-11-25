@@ -1,5 +1,8 @@
-- name: Link logo
-    file: 
+- name: Copy logo
+    copy: 
       src: /usr/share/icons/Pop/32x32@2x/places/distributor-logo-pop-os.png
       path: /.VersionIcon.png
-      state: hard
+      owner: root
+      group: root
+      mode: 0644
+    become: true
