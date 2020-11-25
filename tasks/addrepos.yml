@@ -4,9 +4,9 @@
     state: present
   become: yes
 
-- name: Install enpass repo
-  apt_repository:
-    repo: deb https://apt.enpass.io/ stable main
-    state: present
-    filename: enpass.list
-    update_cache: no
+  #- name: Install enpass repo
+  #  apt_repository:
+  #    repo: deb https://apt.enpass.io/ stable main
+  #    state: present
+  #    filename: enpass.list
+  #    update_cache: no
