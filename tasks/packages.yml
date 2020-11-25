@@ -2,18 +2,18 @@
     become: true
     apt:
       name:
-        #- apt-transport-https
-        #- formiko 
-        #- fonts-firacode
-        #- tmux
-        #- vim
-        #- neovim
-        #- bat
-        #- openssh-client
-        #- openssh-server
-        #- openssh-sftp-server
-        #- thunderbird
-        #- kitty
-        - enapss
+        - apt-transport-https
+        - formiko 
+        - fonts-firacode
+        - tmux
+        - vim
+        - neovim
+        - bat
+        - openssh-client
+        - openssh-server
+        - openssh-sftp-server
+        - thunderbird
+        - kitty
+        #- enapss
       state: present
       update_cache: true
