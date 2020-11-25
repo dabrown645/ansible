@@ -6,5 +6,5 @@
       changed_when: False
 
   tasks:
-    - include: tasks/addrepros.yml
+    - include: tasks/addrepos.yml
     - include: tasks/packages.yml
