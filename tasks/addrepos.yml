@@ -2,7 +2,7 @@
   apt_key:
     url: https://apt.enpass.io/keys/enpass-linux.key
     state: present
-  become: yes
+    become: yes
 
   - name: Install enpass repo
     apt_repository:
