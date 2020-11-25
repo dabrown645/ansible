@@ -18,10 +18,10 @@
         - plank
         - kmines
         - inkscape
-        #- refind
         - enpass
+        - brave
+        #- refind
         #- calibre flatpack
         #- zoom flatpack
-        #- brave
       state: present
       update_cache: true

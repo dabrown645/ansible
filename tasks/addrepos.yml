@@ -9,3 +9,15 @@
     state: present
     filename: enpass.list
     update_cache: no
+
+- name: Install brave key
+  apt_key:
+    url: https://brave-browser-apt-release.s3.brave.com/brave-core.asc
+    state: preset
+
+- name: Install brave repo
+  apt_repository:
+    repo: deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main
+    state: present
+    filename: brave:list
+    update_cache: no
