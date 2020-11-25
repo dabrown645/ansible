@@ -1,0 +1,5 @@
+- name: Link logo
+    file: 
+      src: /usr/share/icons/Pop/32x32@2x/places/distributor-logo-pop-os.png
+      path: /.VersionIcon.png
+      state: hard
