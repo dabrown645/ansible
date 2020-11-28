@@ -9,3 +9,4 @@
     - include: tasks/files.yml
     - include: tasks/addrepos.yml
     - include: tasks/packages.yml
+    #- include: tasks/gnome.yml

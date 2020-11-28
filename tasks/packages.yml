@@ -20,6 +20,9 @@
         - inkscape
         - enpass
         - brave-browser
+        - python-is-python3
+        - gnome-tweaks
+	- pipenv
         #- refind
         #- calibre flatpack
         #- zoom flatpack
