@@ -22,9 +22,23 @@
         - brave-browser
         - python-is-python3
         - gnome-tweaks
-        - pipenv
+        - gnupg-agent
+        - docker
+        - docker-clean
+        - docker-compose
+        - docker-doc
+        - docker.io
+        - apparmor-utils
+        - avahi-daemon
+        - dbus
+        - jq
+        - network-manager
+        - socat
+        - bibletime
+        - bibletime-data
+        #- pipenv
         #- refind
         #- calibre flatpack
         #- zoom flatpack
       state: present
-      update_cache: true
+      update_cache: false
