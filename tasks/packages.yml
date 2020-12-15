@@ -36,6 +36,7 @@
         - socat
         - bibletime
         - bibletime-data
+        - gparted
         #- pipenv
         #- refind
         #- calibre flatpack
