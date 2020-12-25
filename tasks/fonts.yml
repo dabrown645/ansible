@@ -1,0 +1,8 @@
+  - name: Install fonts
+    become: true
+    apt:
+      name:
+        - fonts-firacode
+        - fonts-ibm-plex
+      state: present
+      update_cache: false

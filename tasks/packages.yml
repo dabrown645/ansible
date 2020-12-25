@@ -4,6 +4,12 @@
       name:
         - apt-transport-https
         - formiko 
+        - cabextract
+        - zstd
+        - bzip2
+        - bzip2-doc
+        - p7zip-full
+        - p7zip-rar
         - fonts-firacode
         - tmux
         - vim
@@ -37,6 +43,7 @@
         - bibletime
         - bibletime-data
         - gparted
+        - kookbook
         #- pipenv
         #- refind
         #- calibre flatpack
