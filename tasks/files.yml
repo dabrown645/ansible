@@ -5,3 +5,11 @@
     owner: root
     group: root
     state: hard
+
+- name: Test temp file
+  copy:
+    dest: /David
+    force: no
+    owner: root
+    group: root
+    mode: 0555
