@@ -8,6 +8,7 @@
 
 - name: Test temp file
   copy:
+    content: ""
     dest: /David
     force: no
     owner: root
