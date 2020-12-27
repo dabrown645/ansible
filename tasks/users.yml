@@ -13,7 +13,7 @@
 
 - name: add ansible control node public key
   authorized_key:
-    uers: "ansible"
+    user: "ansible"
     state: present
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIITR8yt0UNRplKQuHe6rDI7srK9eSoI21C23wXlW1xz/ Ansible automation"
     path: /etc/ssh/authorized_keys/ansible
