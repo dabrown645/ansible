@@ -3,15 +3,16 @@
     name: ansible
     system: yes
 
-#- name: copy sudoers_ansible
-#  copy:
-#    src: files/sudoers_ansible
-#    dest: /etc/sudoers.d/ansible
-#    owner: root
-#    group: root
-#    mode: 0440
+- name: copy sudoers_ansible
+  copy:
+    src: files/sudoers_ansible
+    dest: /etc/sudoers.d/ansible
+    owner: root
+    group: root
+    mode: 0440
 
-- name: remove sudoers_ansible
-  file:
-    path: /etc/sudoers.d/ansible
-    state: absent
+- name: add ansible control node public key
+  authorized_key:
+    uers: "ansible"
+    state: present
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIITR8yt0UNRplKQuHe6rDI7srK9eSoI21C23wXlW1xz/ Ansible automation"
