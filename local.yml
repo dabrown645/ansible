@@ -11,6 +11,7 @@
   tasks:
     - include: tasks/users.yml
     - include: tasks/cron.yml
+    - include: tasks/files.yml
     #- include: tasks/addrepos.yml
     #- include: tasks/fonts.yml
     #- include: tasks/files.yml
