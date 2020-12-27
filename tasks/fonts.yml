@@ -2,7 +2,15 @@
     become: true
     apt:
       name:
+        - font-manager
+        - fonts-croscore
+        - fonts-dejavu
+        - fonts-dejavu-extra
         - fonts-firacode
         - fonts-ibm-plex
+        - fonts-libertion
+        - fonts-libertion2
+        - fonts-noto
+        - ttf-bitstream-vera
       state: present
       update_cache: false
