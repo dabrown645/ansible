@@ -8,8 +8,8 @@
         - fonts-dejavu-extra
         - fonts-firacode
         - fonts-ibm-plex
-        - fonts-libertion
-        - fonts-libertion2
+        - fonts-liberation
+        - fonts-liberation2
         - fonts-noto
         - ttf-bitstream-vera
       state: present
