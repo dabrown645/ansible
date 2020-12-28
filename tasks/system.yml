@@ -1,0 +1,32 @@
+  - name: Install system packages
+    become: true
+    apt:
+      name:
+      - apparmor-utils
+      - apt-transport-https
+      - avahi-daemon
+      - bat
+      - bc
+      - bzip2
+      - bzip2-doc
+      - cabextract
+      - dbus
+      - git
+      - git-man
+      - gitg
+      - gnome-tweaks
+      - gnupg-agent
+      - gparted
+      - kitty
+      - network-manager
+      - openssh-client
+      - openssh-server
+      - openssh-sftp-server
+      - p7zip-full
+      - p7zip-rar
+      - pax
+      - sudo
+      - tmux
+      - zstd
+      state: present
+      update_cache: false
