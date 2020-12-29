@@ -25,6 +25,7 @@
       - p7zip-full
       - p7zip-rar
       - pax
+      - python3-psutil
       - sudo
       - tmux
       - zstd

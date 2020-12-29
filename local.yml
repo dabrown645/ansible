@@ -14,8 +14,8 @@
     - include: tasks/files.yml
     - include: tasks/fonts.yml
     - include: tasks/system.yml
+    - include: tasks/gnome.yml
     #- include: tasks/addrepos.yml
     #- include: tasks/files.yml
     #- include: tasks/packages.yml
     #- include: tasks/pythonpkgs.yml
-    #- include: tasks/gnome.yml

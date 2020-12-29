@@ -1,0 +1,114 @@
+#- name: Gnome customization
+#  become: yes
+#  apt: name=python3-psutil
+
+- name: Set GNOME background
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/background/picture-uri"
+    value: "'file:///usr/share/backgrounds/pop/jad-limcaco-183877.jpg'"
+    state: present
+- name: Set GNOME screensaver
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/screensaver/picture-uri"
+    value: "'file:///usr/share/backgrounds/pop/jad-limcaco-183877.jpg'"
+    state: present
+
+- name: Gnome Preferences - Clock format
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/clock-format"
+    value: "'24h'"
+    state: present
+- name: Gnome Preferences - Clock show date - true
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/clock-show-date"
+    value: "true"
+    state: present
+- name: Gnome Preferences - Clock show weekday - true
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/clock-show-weekday"
+    value: "true"
+    state: present
+- name: Gnome Preferences - Clock show seconds - false
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/clock-show-seconds"
+    value: "false"
+    state: present
+
+- name: Gnome Preferences - show battery - true
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/show-battery-percentage"
+    value: "true"
+    state: present
+
+- name: Gnome Preferences - document font name
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/document-font-name"
+    value: "'Roboto Slab 11'"
+    state: present
+- name: Gnome Preferences - font name
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/font-name"
+    value: "'Fira Sans Semi-Light 10'"
+    state: present
+- name: Gnome Preferences - monospace font name
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/monospace-font-name"
+    value: "'Fira Mono 11'"
+    state: present
+
+- name: Gnome Preferences - dark theme
+  become: false
+  dconf:
+    key: "/org/gnome/desktop/interface/gtk-theme"
+    value: "'Pop-dark'"
+    state: present
+
+- name: Gnome WM Preferences - middle click titlebar
+  become: false
+  dconf:
+    key: "/org/gnome/wm/preferences/action-middle-click-titlebar"
+    value: "'none'"
+    state: present
+- name: Gnome WM Preferences - right click titlebar
+  become: false
+  dconf:
+    key: "/org/gnome/wm/preferences/action-right-click-titlebar"
+    value: "'menu'"
+    state: present
+- name: Gnome WM Preferences - double click titlebar
+  become: false
+  dconf:
+    key: "/org/gnome/wm/preferences/action-double-click-titlebar"
+    value: "'toggle-maximize'"
+    state: present
+
+
+- name: Gnome Settings - lid close ac action - nothing
+  become: false
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/lid-close-ac-action"
+    value: "'nothing'"
+    state: present
+- name: Gnome Settings - lid close suspend with external monitor - false
+  become: false
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/lid-close-suspend-with-external-monitor"
+    value: "'false'"
+    state: present
+- name: Gnome Settings - lid close battery action - suspend
+  become: false
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/lid-close-battery-action"
+    value: "'suspend'"
+    state: present
+
